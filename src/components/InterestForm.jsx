@@ -1,5 +1,4 @@
 import React from "react";
-// import Banner from "../images/banner.jpg";
 import Logo from "../images/britam-logo-no-bg.png"
 
 const InterestForm = () => {
@@ -10,18 +9,13 @@ const InterestForm = () => {
   // };
 
   return (
-      <article className="h-screen relative container overflow-hidden bg-cover bg-no-repeat m-auto bg-gradient-to-r from-cyan-500 to-blue-700 flex items-center">
-      {/* <img src={Banner} alt="banner-poster" style={{width: '100%', height: '25%'}}/>  */}
+      <article className="h-screen relative container lg:overflow-hidden bg-cover bg-no-repeat m-auto bg-gradient-to-r from-cyan-500 to-blue-700 flex items-center">
         <form className="m-auto bg-white/90 p-5">
           <img src={Logo} alt="banner-poster" style={{width: '10rem', height: '3rem', margin: 'auto'}}/> 
           
             <h2 className="text-sky-600 text-xl font-bold text-center mb-2">BRITAM MOTOR INSURANCE</h2>
             <hr className="border-sky-500"/>
-            {/* <div class="relative z-0 w-full mb-6 group">
-                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-blue-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
-            </div> */}
-            <div className="flex flex-wrap -mx-3 my-6">
+            <div className="flex flex-wrap -mx-3 my-4">
               <div className="w-full px-3">
                 <label className="block uppercase tracking-wide text-sky-500 text-xs font-bold mb-2" htmlFor="grid-name">
                   Name <span className="text-red-600">*</span>
@@ -30,8 +24,8 @@ const InterestForm = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <div className="flex flex-wrap -mx-3 mb-4">
+              <div className="w-full md:w-1/2 px-3 md:mb-0">
                 <label className="block uppercase tracking-wide text-sky-500 text-xs font-bold mb-2" htmlFor="grid-phone-number">
                   Phone Number <span className="text-red-600">*</span>
                 </label>
@@ -46,8 +40,8 @@ const InterestForm = () => {
               </div>
             </div>    
 
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <div className="flex flex-wrap -mx-3 mb-4">
+              <div className="w-full md:w-1/2 px-3 md:mb-0">
                 <label className="block uppercase tracking-wide text-sky-500 text-xs font-bold mb-2" htmlFor="grid-model">
                   Vehicle Model <span className="text-red-600">*</span>
                 </label>
@@ -62,8 +56,8 @@ const InterestForm = () => {
               </div>
             </div>     
 
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <div className="flex flex-wrap -mx-3 mb-4">
+              <div className="w-full md:w-1/2 px-3 md:mb-0">
               <label className="block uppercase tracking-wide text-sky-500 text-xs font-bold mb-2" htmlFor="grid-year">
                   Year of Manufacture <span className="text-red-600">*</span>
                 </label>
@@ -107,6 +101,12 @@ const InterestForm = () => {
                 </div>          
               </div>
             </div>  
+            <div className="form-check text-center mb-4">
+              <input className="form-check-input" type="checkbox" id="check1" name="option1" value="something" required/>
+              <label className="form-check-label text-sky-500 px-2">I have read and agree to the 
+                <a href="https://ke.britam.com/help/other-services/terms-and-conditions" className="text-red-600" target="_blank" rel="noreferrer">Terms and Conditions</a>
+              </label>
+            </div>
             <footer className="grid justify-center">
               <button className="rounded-lg bg-gradient-to-r from-sky-700 to-red-500 p-2 text-white text-lg hover:text-xl text-bold w-52 hover:opacity-80">Submit</button>               
             </footer> 

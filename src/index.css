@@ -24,13 +24,10 @@ input::-webkit-inner-spin-button {
 }
 
 form {
-  /* box-shadow: 0 0 15px rgb(14 165 233); */
   box-shadow: 0 0 15px red;
   border-radius: 10px;
 }
 
 .container {
   background-image: url(./images/car-banner4.jpg);
-  /* object-fit: cover;
-  background-repeat: no-repeat; */
 }
