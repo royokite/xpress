@@ -15,19 +15,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* Hide number field arrows */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-form {
-  box-shadow: 0 0 15px red;
-  border-radius: 10px;
-}
-
-.container {
-  background-image: url(./images/car-banner4.jpg);
-}

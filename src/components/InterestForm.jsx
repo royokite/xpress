@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "../images/britam-logo-no-bg.png"
+import Logo from "../images/britam-logo-no-bg.png";
 
-const InterestForm = () => {
+const InterestForm = ({ setIsOpen }) => {
 
   // const handleSubmit = (e) => {
   //   e.preventDefault();
@@ -104,11 +104,14 @@ const InterestForm = () => {
             <div className="form-check text-center mb-4">
               <input className="form-check-input" type="checkbox" id="check1" name="option1" value="something" required/>
               <label className="form-check-label text-sky-500 px-2">I have read and agree to the 
-                <a href="https://ke.britam.com/help/other-services/terms-and-conditions" className="text-red-600" target="_blank" rel="noreferrer">Terms and Conditions</a>
+                <a href="https://ke.britam.com/help/other-services/terms-and-conditions" className="text-red-600" target="_blank" rel="noreferrer"> Terms and Conditions</a>
               </label>
             </div>
             <footer className="grid justify-center">
-              <button className="rounded-lg bg-gradient-to-r from-sky-700 to-red-500 p-2 text-white text-lg hover:text-xl text-bold w-52 hover:opacity-80">Submit</button>               
+              <button 
+                className="rounded-lg bg-gradient-to-r from-sky-700 to-red-500 p-2 text-white text-lg hover:text-xl text-bold w-52 hover:opacity-80"
+                onClick={() => setIsOpen(true)}
+                >Submit</button>               
             </footer> 
           </form>
         </article>
