@@ -25,7 +25,7 @@ const PopupModal = ({ setIsOpen }) => {
             <div className="actionsContainer">
               <a href={motorUrl} target="_blank" rel="noreferrer">
               <button className="moreBtn">
-                See More
+                Learn More
               </button>
               </a>
             </div>
